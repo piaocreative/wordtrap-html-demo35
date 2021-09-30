@@ -1,0 +1,431 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here extra styles for demo. Thanks!
+-----------------------------------------------------------------*/
+
+// .contact {
+// 	.contact-email {
+// 		font-size: 2.25rem;
+// 		font-family: $heading-font;
+// 		font-weight: 400;
+// 		color: $primary;
+// 		line-height: 4rem;
+// 		margin-bottom: 0;
+// 	}
+
+// 	.contact-title {
+// 		font-size: $h1-font-size;
+// 		font-family: $body-font;
+// 		font-weight: 800;
+// 		color: $secondary;
+// 		line-height: 4rem;
+// 	}
+
+// 	.contact-icons {
+// 		&.dark-contact a {
+// 			color: white;
+// 			font-size: 0.7rem;
+// 		}
+
+// 		&.light-contact a {
+// 			color: $secondary;
+// 			font-size: 0.875rem;
+// 		}
+
+// 		li {
+// 			a {
+// 				font-family: $body-font;
+// 				line-height: 2rem;
+				
+// 				&:hover {
+// 					color: $primary;
+// 				}
+
+// 				.contact-icon {
+// 					color: $primary;
+// 					display: inline-block;
+// 					margin-right: 1.2rem;
+// 					font-size: 1.2rem;
+// 					width: 1.8rem;
+// 					text-align: center;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// .feedback {
+// 	input {
+// 		color: $body-color;
+// 		background-color: $third-color;
+// 	}
+
+// 	button {
+// 		background-color: $third-color;
+		
+// 		i {
+// 			font-size: 1.25rem;
+// 			line-height: 1.5rem;
+// 		}
+// 	}
+// }
+
+// .col-37 {
+// 	width: 100%;
+
+// 	@media (min-width: 1600px) {
+// 		width: 37%;
+// 	}
+// }
+
+// .col-63 {
+// 	width: 100%;
+
+// 	@media (min-width: 1600px) {
+// 		width: 63%;
+// 	}
+// }
+
+// .choose-title {
+// 	padding: 1rem 2rem;
+// 	justify-content: center;
+// 	text-align: center;
+	
+// 	@media (min-width: 992px) {
+// 		justify-content: start;
+// 		text-align: left;
+// 		padding: 1rem 2.5rem;
+// 	}
+	
+// 	@media (min-width: 1600px) {
+// 		justify-content: end;
+// 		text-align: left;
+// 		padding: 3rem 5rem;
+// 	}
+
+// 	h3 {
+// 		color: #282828;
+// 		font-size: $h3-font-size;
+// 		line-height: 2.3rem;
+// 		font-weight: 700;
+// 		margin-bottom: 0;
+// 	}
+// }
+
+// .choose-content {
+// 	padding-left: 2.34375rem;
+// 	padding-right: 2.4rem;
+	
+// 	@media (min-width: 1600px) {
+// 		padding-right: 8rem;
+// 	}
+
+// 	span {
+// 		color: #282828;
+// 		font-size: $h5-font-size;
+// 		line-height: 1.5rem;
+// 		font-weight: 400;
+// 	}
+// }
+
+// ########################################################
+
+.col-38 {
+	width: 100%;
+
+	@include media-breakpoint-up(lg) {
+		width: 38%;
+	}
+}
+
+.col-62 {
+	width: 100%;
+
+	@include media-breakpoint-up(lg) {
+		width: 62%;
+	}
+}
+
+
+#content {
+	.btn {
+		width: $spacer*7;
+		height: $spacer*1.875;
+		// background-color: $white;
+		// border-color: $white;
+	}
+
+	.contact {
+		color: black;
+
+		.goto{
+			padding-top: 6.5rem;
+			padding-bottom: 3.5rem;
+			a {
+				&:hover{
+					color: white;
+				}
+				&:visited{
+					font-weight: 500;
+					font-family: $body-font;
+					color: white;
+				}
+			}
+		}
+	
+		.contact-content{
+			padding-top: 2rem;
+			@include media-breakpoint-up(sm) {
+				padding-top: 3.8rem;
+			}
+			.content-detail{
+				line-height: 1.8;
+				padding-top: 1rem;
+			}
+		}
+
+		.contact-info .heading-block{
+			text-align: center;
+			
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+			}
+			.title h2{
+				// .heading-block{
+				// 	.title{
+				// 		h2{
+							line-height: 1.2 !important;
+				// 		}
+				// 	}
+				// }
+			}
+			.content{
+				line-height: 1.8;
+			}
+		}
+	}
+
+	.about{
+		color: black;
+	
+		.about-content{
+			padding-top: 10.5rem;
+			@include media-breakpoint-up(sm) {
+				padding-top: 10.5rem;
+			}
+			.content-detail{
+				line-height: 1.8;
+				padding-left: 2rem;
+				padding-top: 4rem;
+			}
+		}
+		
+		.company-rule{
+			a {
+				color: #9b9b9b;
+				&:hover{
+					color: black;
+				}
+			}
+		}
+		.company-do{
+			img{
+				width: 100%;
+				@include media-breakpoint-up(lg) {
+					width: auto;
+				}
+			}
+			.do-title{
+				margin-top: 2rem;
+				@include media-breakpoint-up(lg) {
+					margin-top: -3.5rem;
+				}
+			}
+		}
+		
+
+		.testimonials{
+			.sub-content{
+				font-family: $body-font;
+				line-height: 1.5;
+				margin-bottom: 1rem;
+			}
+			.sub-name{
+				font-family: $heading-font;
+				line-height: 1.2;
+				border-bottom: #333 solid 2px;
+			}
+		}
+		.our-work{
+			img{
+				min-height: 500px;
+				object-fit: cover;
+				object-position: center;
+			}
+			.row{
+				bottom: 2.8rem;
+				.content{
+					margin-top: 4.5rem;
+					
+					@include media-breakpoint-up(lg) {
+						margin-left: -2rem;
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+		.why-we{
+			.col-38{
+				padding-right: 2.8rem;
+			}
+			.title .icons{
+				width: 2.1rem;
+			}
+		}
+		.shop-now{
+			.heading-block{
+				top: 3.3rem;
+				left: 3rem;
+			}
+		}
+	}
+
+	.error-404{
+		color: black;
+	
+		.error-content{
+			padding-top: 8.5rem;
+			.content-detail{
+				line-height: 1.8;
+				padding-left: 2rem;
+				padding-top: 4rem;
+			}
+		}
+	}
+
+	.home{
+		color: black;
+		.home-content{
+			padding-top: 11.5rem;
+			.content-detail{
+				line-height: 1.8;
+			}
+			.content-slide-icon{
+				// display: flex;
+				position: absolute;
+				left: 56.5%;
+				top: 32%;
+			}
+		}
+		
+		.main-collection{
+			.content-slide-icon{
+				// display: flex;
+				position: absolute;
+				left: 51.5%;
+				top: 28%;
+			}
+		}
+
+		.company-showroom{
+			.showroom-content{
+				margin-top: -10rem;
+			}
+		}
+
+		.company-about{
+			margin-top: 6rem;
+			.about-content{
+				top: 8rem;
+				left: 8.5rem;
+				.content-detail{
+					line-height: 0.9rem;
+				}
+			}
+		}
+
+		.company-rule{
+			a {
+				color: #9b9b9b;
+				&:hover{
+					color: black;
+				}
+			}
+		}
+
+		.testimonials{
+			.sub-content{
+				font-family: $body-font;
+				line-height: 1.5;
+				margin-bottom: 1rem;
+			}
+			.sub-name{
+				font-family: $heading-font;
+				line-height: 1.2;
+				border-bottom: #333 solid 2px;
+			}
+		}
+		.our-work{
+			margin-top: 24rem;
+			
+			@include media-breakpoint-up(lg) {
+				margin-top: 0rem;
+			}
+
+			img{
+				min-height: 500px;
+				object-fit: cover;
+				object-position: center;
+			}
+			.row{
+				bottom: 2.8rem;
+				.content{
+					margin-top: 4.5rem;
+					
+					@include media-breakpoint-up(lg) {
+						margin-left: -2rem;
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+		.why-we{
+			.col-38{
+				padding-right: 2.8rem;
+			}
+			.title .icons{
+				width: 2.1rem;
+			}
+		}
+		.shop-now{
+			.heading-block{
+				top: 3.3rem;
+				left: 3rem;
+			}
+		}
+	}
+}
+
+
+.btn-base-style{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border-radius: $spacer*0.5;
+	@include media-breakpoint-up(sm) {
+		width: $spacer*10;
+	}
+}

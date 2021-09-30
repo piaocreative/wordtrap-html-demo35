@@ -1,0 +1,45 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				text-align: center;
+				margin-left: 0.7rem;
+				margin-right: 0.7rem;
+				width: 1.45rem;
+				height: 1.45rem;
+				border-radius: 50%;
+				line-height: 0;
+			}
+		}
+	}
+}
+
+.widget-algin-sm{
+	display: flex;
+	justify-content: center;
+	@include media-breakpoint-up(sm) {
+		justify-content: start;
+	}
+}
