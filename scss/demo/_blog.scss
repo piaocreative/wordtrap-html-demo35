@@ -13,95 +13,64 @@
 /* post
 -----------------------------------------------------------------*/
 .post{
-	.post-left{
-		@include media-breakpoint-up(xl) {
-			padding-right: 5.5rem;
-		}
-	}
-	.post-right{
-		@include media-breakpoint-up(xl) {
-			padding-left: 5rem;
-		}
-	}
-	.post-card{
-		.post-card-img{
-			margin-bottom: 1.5rem;
-		}
-		.post-card-details{
-			.post-description{
-				margin-bottom: 0;
-				line-height: 1.5;
-			}
-			.post-year{
-				margin-top: 0.3rem;
-				line-height: initial;
-			}
-		}
-	}
-	.post-title{
-		padding-left: 1rem;
-		padding-right: 1rem;
-		@include media-breakpoint-up(xl) {
-			padding-left: 4.2rem;
-			padding-right: 5rem;
-		}
+	position: relative;
+	margin-bottom: 1.875rem;
+}
 
-		.post-title-comma{
-			font-size: 2.2rem;
-			line-height: 1.5;
-		}
-		.post-title-description{
-			line-height: 1.7;
-		}
-		p{
-			margin-top: 1.5rem;
-			margin-bottom: 0;
-			line-height: 1.7;
-		}
+.post-thumbnail {
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
-.post-bottom-child{
-	.post-img-bar{
-		position: relative;
-		text-align: center;
-		a {
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			.add-under-bar{
-				position: absolute;
-				bottom: 0;
-				height: 0.5rem;
-				border-radius: 0.25rem;
-				width: 100%;
-			}
-		}
+
+.post-content {
+	padding-top: 1.25rem;
+}
+
+.entry-meta {
+	a {
+		font-size: 0.75rem;
+		color: #a0a0a0;
 	}
-	.post-content{
-		margin-top: 2rem;
+}
+
+.entry-title {
+	font-size: 1.875rem;
+	font-weight: 200;
+	line-height: 1.25;
+}
+
+.posts {
+	.slick-dots {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		.post-date{
-			color: #6d6d6d;
+		right: 2rem;
+		top: -4rem;
+		height: 30px;
+		width: 6.25rem;
+	}
+
+	.slick-prev{
+		display: flex;
+		width: 20px;
+		padding: 0;
+		top: -3.5rem;
+		left: calc(90% - 1.5rem);
+		z-index: 11;
+		&::before{
+			color: black;
 		}
 	}
-}
-.post-bottom-avatar{
-	.post-small{
-		width: 70%;
-		margin: 0 auto;
-		text-align: center;
-		.post-content{
-			margin-top: 2rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			.post-date{
-				color: #6d6d6d;
-			}
+
+	.slick-next{
+		display: flex;
+		width: 20px;
+		padding: 0;
+		top: -3.5rem;
+		z-index: 11;
+		left: calc(90% + 5rem);
+		&::before{
+			color: black;
 		}
 	}
 }

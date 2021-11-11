@@ -92,7 +92,10 @@ h2,
 h3,
 h4,
 h5,
-// h6 { margin-bottom: 1.25rem; }
+h6 {
+    color: $heading-color; 
+    margin-bottom: 1.25rem; 
+}
 
 h1 {
 	font-weight: 800;

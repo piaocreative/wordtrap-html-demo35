@@ -13,150 +13,20 @@
 /* ----------------------------------------------------------------
 	Add here styles for footer. Thanks!
 -----------------------------------------------------------------*/
-
-#footer-top {
-	padding-top: 1.875rem;
-	font-size: 0.685rem;
-	padding-bottom: 1.875rem;
-	background-color: $bg-color-first;
-
-	.img-footer-right{
-		max-height: 375px;
-		width: 90%;
-		padding: 0;
-
-		@media (min-width: 992px){
-			padding-left: 5rem;
-		}
-	}
-	.footer-top-signup{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		@include media-breakpoint-up(lg) {
-			align-items: flex-start;
-		}
-	}
-	.signup-title p{
-		min-width: 240px;
-		line-height: 3.5rem;
-	}
-	.signup-button {
-		padding-bottom: 1.875rem;
-
-		button{
-			width: $spacer*7.5;
-		}
-	}
+#footer {
+	background-color: #232323;
 }
 
-
 #footer-main {
-	.input-group{
-		.input-group-append{
-			
-		}
-	}
-	.navbar-brand {
-		margin: 0 auto 0 auto;
-		line-height: 6;
-		@include media-breakpoint-up(xl) {
-			margin: 0 3.9rem 0 0;
-			line-height: 1;
-		}
-	}
-
-
-	// background-color: $bg-color-second;
-	padding-top: 2.5rem !important;
-	padding-bottom: 1.8rem;
-	@include media-breakpoint-up(lg) {
-		// background: url(../images/footer.png) no-repeat center;
-		// background-color: $bg-color-second;
-	}
-
-	.list-align{
-		display: flex;
-		justify-content: space-around;
-		padding: 0 0 0 0;
-		align-items: center;
-		@include media-breakpoint-up(sm){
-			justify-content: flex-start;
-			align-items: flex-start;
-		}
-	}
-	ul>li>a>span>i{
-		margin-right: $spacer;
-		font-size: $spacer*1.25;
-		width: $spacer*1.8;
-		text-align: center;
-		line-height: $initial;
-	}
-	
-	.social-icons {
-		li {
-			padding: 0 $spacer*0.25;
-
-			margin-left: 0.3rem;
-			margin-right: 0.3rem;
-			&:first-child{
-				margin-left: 0;
-			}
-			&:last-child{
-				margin-right: 0;
-			}
-	
-			a {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				color: white;
-				font-size: 0.8rem;
-				width: 1rem;
-				// line-height: $spacer*1.8125;
-				transition: all 0.3s ease-in-out;
-
-				&:hover {
-					background-color: $theme-color;
-					color: $white;
-				}
-			}
-		}
-	}
+	padding: 4.375rem 0;
 }
 
 #footer-bottom {
-	background-color: $bg-color-first;
-	border-width: 0;
-	border-top: solid 1px #393939;
-	padding-top: 2.5rem;
-	padding-bottom: 3.5rem;
+	border-top: 1px solid rgba($color: $white, $alpha: 0.2);
+	padding: 3.5rem 0;
 
-	span img{
-		width: 100%;
+	p {
+		font-size: 0.875rem;
+		color: rgba($color: $white, $alpha: 0.5);
 	}
-
-	.list-align{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: column;
-		@include media-breakpoint-up(sm){
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-direction: row;
-			
-		}
-
-		.widget-payment{
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			@include media-breakpoint-up(sm){
-				padding-top: 0;
-				padding-bottom: 0;
-			}
-		}
-	}
-	
 }

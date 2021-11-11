@@ -29,7 +29,7 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo49 | Saler</title>
+    <title>Demo35 | Contact</title>
 </head>
 <body id="demo49">
 
@@ -61,55 +61,49 @@
                         
                         <!-- Navbar Collapse
                         ============================================= -->
-                        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between body-font">
+                        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
 
-                            <!-- Menu Left 
-                            ============================================= -->
-                            <div class="menu-left">
+                            <div class="top-search">
                                 <ul class="nav navbar-nav">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link fs-685 bg-white">
+                                        <a href="#" class="nav-link bg-white">
                                             <span><i class="fas fa-search"></i></span>
                                             <!-- <input type="text" class="form-control" aria-label="Search" placeholder=""> -->
                                         </a>
                                     </li>
                                 </ul>
-                            </div> <!-- menu-left -->
+                            </div>
 
-                            <!-- Menu Center
+                            <!-- Primary Navigation
                             ============================================= -->
-                            <div class="menu-center">
-                                <!-- Primary Navigation
-                                ============================================= -->
-                                <nav id="primary-menu">
-                                    <ul class="nav navbar-nav">
-                                        <li class="current nav-item">
-                                            <a href="#" class="nav-link fs-685 text-white">Product</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link fs-685 text-white">About Us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link fs-685 text-white">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav><!-- #primary-menu -->
-                            </div> <!-- menu-center -->
-                            
-                            <!-- Menu Right 
-                            ============================================= -->
-                            <div class="menu-right">
-                                <ul class="nav navbar-nav flex-row  align-items-center">
-                                    <li class="nav-item">
-                                      <a href="#" class="nav-link fs-685 lh-1"><i class="far fa-user"></i></a>
+                            <nav id="primary-menu">
+                                <ul class="nav navbar-nav gap-3">
+                                    <li class="current nav-item">
+                                        <a href="#" class="nav-link text-white">Product</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a href="#" class="nav-link d-flex fs-685">
-                                        <img src="./images/icons/shopping-bag.png" alt="Add bag" height="11px">
+                                        <a href="#" class="nav-link text-white">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav><!-- #primary-menu -->
+                            
+                            <!-- Top btns 
+                            ============================================= -->
+                            <div id="top-btns">
+                                <ul class="nav navbar-nav flex-row  align-items-center">
+                                    <li class="nav-item">
+                                      <a href="#" class="nav-link lh-1"><i class="far fa-user"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#" class="nav-link ">
+                                        <i class="fas fa-shopping-bag"></i>
                                       </a>
                                     </li>
                                 </ul>
-                            </div> <!-- menu-right -->
+                            </div> <!-- Top btns -->
 
                         </div>
 
@@ -125,121 +119,134 @@
 		============================================= -->
 		<section id="content">
 
-            <div class="content-wrap contact">
+            <div class="content-wrap">
 
-                <div class="banner-back" style="background: url(./images/background/contact.png) no-repeat center; background-size: cover;">
-                    
-                    <div class="container text-white">
+                <div id="contact-banner" class="banner" style="background-image: url(./images/background/contact.png);">
+
+                    <div class="container">
+
+                        <div id="page-top">
+                            <div class="breadcrumb my-5">
+                                <ul class="d-flex gap-4">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#" class="active text-white text-decoration-none">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="page-title">
+                            <h1 class="title">
+                                Contact
+                                <br>
+                                <span style="margin-left: 4rem;">with us</span><br>
+                            </h1>                        
+                        </div>  
+
+                    </div>
+
+                </div>
+
+                <div class="section">
+
+                    <div class="container">
                         
-                        <div class="goto fs-650">
-                            <a href="#">Home</a>
-                            /
-                            <a href="#" class="active">Contact Us</a>
+                        <div class="row">
+
+                            <div class="col-lg-8">
+
+                                <div id="map">
+                                    <img src="./images/map.png" class="w-100 mb-3" alt="">
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-lg-3 offset-lg-1">
+    
+                                <a href="#" class="icon-box">
+                                    <div class="icon-wrapper">
+                                        <h3 class="mb-3 lh-1 fw-lighter">Address</h3>
+                                    </div>
+                                    <div class="icon-header">
+                                        <p class="mb-0">123 East 26th Street, Fifth Floor, </p>
+                                        <p class="mb-0">New York, NY 10011</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="icon-box">
+                                    <div class="icon-wrapper">
+                                        <h3 class="mb-3 lh-1 fw-lighter">OPENNING 
+                                            HOURS</h3>
+                                    </div>
+                                    <div class="icon-header">
+                                        <p class="mb-0">Monday — Friday 9am – 5pm</p>
+                                        <p class="mb-0">Saturday — 11am – 4pm</p>
+                                        <p class="mb-0">Sunday — Closed</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="icon-box">
+                                    <div class="icon-wrapper">
+                                        <h3 class="mb-3 lh-1 fw-lighter">EMAIL</h3>
+                                    </div>
+                                    <div class="icon-header">
+                                        <p class="mb-0">info@saler.com</p>
+                                        <p class="mb-0">alex.milton@saler.com</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="icon-box">
+                                    <div class="icon-wrapper">
+                                        <h3 class="mb-3 lh-1 fw-lighter">Phone</h3>
+                                    </div>
+                                    <div class="icon-header">
+                                        <p class="mb-0">+1 234 56 78 90</p>
+                                    </div>
+                                </a>
+    
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section pt-0">
+
+                    <div class="container">
+
+                        <div class="heading-block">
+                            <h2 class="title mb-0">
+                                discuss<br>
+                                <span style="margin-left: 4rem;">a project?</span>
+                            </h2>
                         </div>
 
                         <div class="row">
 
-                            <div class="col-md-7 col-12 text-center">
+                            <div class="col-lg-10">
 
-                                <div class="col-9">
-                                    <img src="images/contact-title.png" alt="contact" class="img-fluid mt-3 ms-5" />
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-5 col-12 ps-md-0 contact-content">
-
-                                <div class="row gx-0">
-                                <!-- <div class="row section-pb-60px"> -->
-                                    <div class="col-lg-7 content-detail body-font fs-560 text-white">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                <form action="#">
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control form-control-lg border-bottom" placeholder="Enter Your Name">
                                     </div>
-                                    <div class="col-lg-7 content-detail body-font fs-560 text-white">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control form-control-lg border-bottom" placeholder="Enter Your Email">
                                     </div>
-                                <!-- </div> -->
-                                </div>
+                                    <div class="mb-5">
+                                        <input type="text" class="form-control form-control-lg border-bottom" placeholder="Enter Your Message">
+                                    </div> 
+                                    <button class="btn btn-primary text-white text-uppercase">Go home page</button>
+                                </form>
 
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-    
-                    <div class="row section-pt-90px section-pb-120px">
-                        <div class="col-lg-9">
-                            <div id="map" class="me-lg-4">
-                                <img src="images/map.png" alt="map" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ps-lg-0 pe-lg-5 contact-info">
-                            <div class="heading-block pt-lg-0 pt-5">
-                                <div class="title pb-1">
-                                    <h2 class="fs-1875 text-uppercase">Address</h2>
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    123 East 26th Street, Fifth Floor, New York, NY 10011
-                                </div>
-
-                                <div class="title pt-3 pb-2">
-                                    <h2 class="fs-1875 text-uppercase">Openning Hours</h2>
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    Monday — Friday 9am – 5pm
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    Saturday — 11am – 4pm
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    Sunday — Closed
-                                </div>
-
-                                <div class="title pt-3 pb-2">
-                                    <h2 class="fs-1875 text-uppercase">Email</h2>
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    info@saler.com
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    alex.milton@saler.com
-                                </div>
-
-                                <div class="title pt-3 pb-2">
-                                    <h2 class="fs-1875 text-uppercase">Phone</h2>
-                                </div>
-                                <div class="content fs-650 mb-0">
-                                    +1 234 56 78 90
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-    
-                    <div class="section-pb-120px">
-                        <div class="heading-block">
-                            <div class="title">
-                                <h2 class="fs-4200 text-uppercase">Discuss</h2>
-                                <h2 class="space fs-4200 text-uppercase text-nowrap">A Project</h2>
-                            </div>
-                        </div>
-
-                        <form class="contact-form " action="php/contact-form.php" method="POST" novalidate="novalidate">
                             
-                            <form action="#" class="contact-form">
-                                <input type="text" class="contact-form-control rounded-0" name="name" placeholder="Enter Your Name">
-                                <input type="text" class="contact-form-control rounded-0" name="email" placeholder="Enter Your Email">
-                                <input type="text" class="contact-form-control rounded-0" name="message" placeholder="Enter Your Message">
-                                
-                                <div class="mt-5 d-flex justify-content-lg-start justify-content-center">
-                                    <input type="submit" value="Go home page" class="btn btn-primary text-uppercase fs-560 fw-bold" data-loading-text="Loading...">
-                                </div>
-                        </form>
+                        </div>
 
                     </div>
 
                 </div>
+
             </div>
 
 
@@ -247,141 +254,132 @@
 
         <!-- Footer
 		============================================= -->
-		<footer id="footer">
-            
-            <!-- Footer Main
-		    ============================================= -->
-            <div id="footer-main" class="section-pt-60px body-font bg-color-first">
+        <footer id="footer">
 
-                <div class="container">
+            <div class="container">
 
-                    <!-- <div>
-                        <a href="#" class="navbar-brand lh-1" data-dark-logo="images/logo.png">
-                            <img src="images/logo.png" alt="Saler Logo" height="22.5px">
-                        </a>
-                    </div> -->
+                <!-- Footer Main
+                ============================================= -->
+                <div id="footer-main">
 
-                    <div class="row gx-0">
-                        <div class="col-lg-7">
-                            <div class="row gx-0">
-                                <div class="col-lg-3 col-12 pb-5 d-flex">
-                                    <a href="#" class="navbar-brand px-0 lh-1" data-dark-logo="images/logo.png">
-                                        <img src="images/logo.png" alt="Saler Logo" height="22.5px">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <ul class="list-align list-group mt-2 mb-2 fs-685 text-white">
-                                        <h5 class="fs-685 fw-bold">
-                                            Producs
-                                        </h5>
+                    <div class="row">
+
+                        <div class="col-xl-1 text-center text-xl-start">
+
+                            <a href="#" class="navbar-brand m-0">
+                                <img src="./images/logo.png" class="mb-5" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <div class="widget widget-links text-center text-lg-start">
+                                <h5 class="widget-title">Products</h5>
+                                <div class="widget-content">
+                                    <ul>
                                         <li><a href="#">Kitchen</a></li>
                                         <li><a href="#">Bathroom</a></li>
                                         <li><a href="#">Living room</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <ul class="list-align list-group mt-2 mb-2 fs-685 text-white">
-                                        <h5 class="fs-685 fw-bold">
-                                            About Us
-                                        </h5>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <div class="widget widget-links text-center text-lg-start">
+                                <h5 class="widget-title">About Us</h5>
+                                <div class="widget-content">
+                                    <ul>
                                         <li><a href="#">Team</a></li>
                                         <li><a href="#">News</a></li>
                                         <li><a href="#">Our work</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <ul class="list-align list-group mt-2 mb-2 fs-685 text-white">
-                                        <h5 class="fs-685 fw-bold">
-                                            Opening Hours
-                                        </h5>
-                                        <li><a href="#" class="text-nowrap" style="z-index: 10;">Mn - Fr: 09:00 to 19:00</a></li>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <div class="widget widget-links text-center text-lg-start">
+                                <h5 class="widget-title">Opening Hours</h5>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="#">Mn - Fr: 09:00 to 19:00</a></li>
                                         <li><a href="#">St - 10:00 to 16:00</a></li>
                                         <li><a href="#">Sn - Closed</a></li>
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="col-lg-5">
-                            <div class="row gx-0">
-                                <div class="col-lg-2">
-                                </div>
-                                <div class="col-lg-4 col-sm-4">
-                                    <ul class="list-align list-group mt-2 mb-2 fs-685 text-white">
-                                        <h5 class="fs-685 fw-bold">
-                                            Contacts
-                                        </h5>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 col-sm-4">
-                                    <ul class="list-align list-group mt-2 mb-2 fs-685 text-white">
-                                        <h5 class="fs-685 fw-bold">
-                                            Subscribe To Our News
-                                        </h5>
-                                        <form id="widget-subscribe-form" class="mb-3" action="#" method="post">
-                                            <div class="input-group">
-                                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your mail">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary text-uppercase fs-560 fw-bold" type="submit">Go</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <ul class="widget-algin-sm social-icons d-flex my-1">
-                                            <li>
-                                                <a href="#" target="_blank" title="Facebook"> <i class="fab fa-facebook-f"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank" title="Twitter"> <i class="fab fa-twitter"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank" title="Linkedin"> <i class="fab fa-instagram"></i> </a>
-                                            </li>
-                                        </ul>
-                                    </ul>
-                                    <!-- <div class="col-sm-auto mt-3 mb-3"> -->
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
+                        <div class="col-lg-2">
 
-            </div><!-- #footer-main -->
-
-            <!-- Footer bottom
-            ============================================= -->
-            <div id="footer-bottom">
-
-                <div class="container">
-
-                    <div class="list-align">
-                    <!-- <div class="d-flex justify-content-around align-items-center"> -->
-                        
-                        <div class="text-third fs-685"> Copyright © 2021 InteriorSaler </div>
-    
-                        <div class="d-flex justify-content-center">
-
-                            <div class="widget widget-payment">
-                                <!-- <div class="widget-content"> -->
-                                    <div class="payments d-flex justify-content-between">
-                                        <span class="payment-icon"> <img src="images/payments/visa.png" alt="Visa" /> </span>
-                                        <span class="payment-icon"> <img src="images/payments/paypal.png" alt="Paypal" /> </span>
-                                        <span class="payment-icon"> <img src="images/payments/mastercard.png" alt="Mastercard" /> </span>
-                                    </div>
-                                <!-- </div> -->
+                            <div class="widget text-center text-lg-start">
+                                <h5 class="widget-title mb-4">Contacts</h5>
                             </div>
 
                         </div>
-                        
-                        <div class="list-align-item d-flex text-third fs-685"> All Rights Reserved </div>
-    
+
+                        <div class="col-lg-3">
+
+                            <div class="widget widget-subscribe text-center text-lg-start">
+                                <h5 class="widget-title">Subscribe To Our News</h5>
+                                <div class="widget-content">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Enter your mail">
+                                            <button class="btn btn-primary px-4 text-white">GO</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="widget widget-social">
+                                <div class="widget-content">
+                                    <ul class="social-icons d-flex gap-4 justify-content-center justify-content-lg-start">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </div>
+                </div><!-- Footer Main -->
 
-            </div><!-- #footer-bottom -->
+                <!-- Footer bottom
+                ============================================= -->
+                <div id="footer-bottom">
+                    
+                    <div class="d-lg-flex justify-content-between text-center text-lg-start">
 
-        </footer><!-- #footer -->
+                        <p class="mb-lg-0">Copyright &copy; 2020 InteriorSaler</p>
+
+                        <div class="widget widget-payment mb-5 mb-lg-0">
+                            <div class="payments d-flex gap-3 justify-content-center justify-content-lg-start">
+                                <span class="payment-icon"> <img src="images/payments/visa.png" alt="Visa" /> </span>
+                                <span class="payment-icon"> <img src="images/payments/paypal.png" alt="Paypal" /> </span>
+                                <span class="payment-icon"> <img src="images/payments/mastercard.png" alt="Mastercard" /> </span>
+                            </div>
+                        </div>
+
+                        <p class="mb-0">All Rights Reserved</p>
+
+                    </div>
+
+                </div><!-- Footer bottom -->
+
+            </div>
+
+        </footer><!-- Footer -->
         
     </div>
 

@@ -23,55 +23,159 @@ $(document).ready(function(){
         ]
     });
 
-    $('.testimons').slick({
+    $('.testimonials').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         infinite: true,
-        adaptiveHeight: true,
-        variableWidth: true,
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/icons/arrowleft.png' style='width:10px; height:auto; padding: 0;'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='./images/icons/arrowright.png' style='width:10px; height:auto; padding: 0;'>",
     });
 
     $('.arrivals').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
         infinite: true,
-        adaptiveHeight: true,
-        variableWidth: true,
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/icons/arrowleft.png' style='width:10px; height:auto; padding: 0;'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='./images/icons/arrowright.png' style='width:10px; height:auto; padding: 0;'>",
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false,
+                  dots:false,
+                }
+              }
+          ]
     });
 
     $('.collections').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
         dots: true,
-        infinite: true,
         // speed: 300,
-        adaptiveHeight: true,
-		variableWidth: true,
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/icons/arrowleft.png' style='width:10px; height:auto; padding: 0;'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='./images/icons/arrowright.png' style='width:10px; height:auto; padding: 0;'>",
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            }
+          ]
     });
 
-    $('.news').slick({
+    $('.posts').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
         dots: true,
         infinite: true,
         // speed: 300,
-        adaptiveHeight: true,
-		variableWidth: true,
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/icons/arrowleft.png' style='width:10px; height:auto; padding: 0;'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='./images/icons/arrowright.png' style='width:10px; height:auto; padding: 0;'>",
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            }
+          ]
+    });
+
+    $('.teams').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        // speed: 300,
+		prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/icons/arrowleft.png' style='width:10px; height:auto; padding: 0;'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='./images/icons/arrowright.png' style='width:10px; height:auto; padding: 0;'>",
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots:false,
+              }
+            }
+          ]
     });
 });

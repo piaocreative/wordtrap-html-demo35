@@ -22,11 +22,16 @@
 	
 	.title {
 		display: block;		
-		font-family: $heading-font;
-		font-size: 3.1rem;
-		font-weight: 800;
+		font-size: 5.625rem;
+		font-weight: 200;
 		line-height: 1;
+		color: $white;
 		margin-bottom: 2rem;
+		text-transform: uppercase;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 3.75rem;
+		}
 	}
 
 	.sub-title {
@@ -37,5 +42,34 @@
 		line-height: 1;
 		margin-bottom: 0.8rem;
 		color: $primary;
+	}
+}
+
+.breadcrumb {
+	ul {
+		li {
+			a {
+				color: #9b9b9b;
+
+				&.active {
+					color: $dark;
+					text-decoration: underline;
+				}
+			}
+
+			&:first-child {
+				&:after {
+					content: "";
+					display: inline-block;
+					position: relative;
+					left: 0.75rem;
+					vertical-align: middle;
+					background-color: #9b9b9b;
+					width: 1px;
+					height: 1rem;
+					transform: rotate(45deg);
+				}
+			}
+		}
 	}
 }

@@ -25,15 +25,21 @@
 
 #header {
 	position: relative;
-	
-	@include media-breakpoint-up(xl) {
+
+	@include media-breakpoint-up(lg) {
+		background-color: transparent;
 		border-bottom: solid 1px $white;
-		margin-bottom: -3.3rem;
-	}
+
+		& + #content,
+		& + #error-404 {
+			position: relative;
+			top: -$header-height;
+			margin-bottom: -$header-height;
+		}
+	}	
 }
 
 #header-wrap{
-
 	.navbar{
 		.navbar-brand {
 			margin: 2rem auto 2rem auto;
@@ -43,55 +49,27 @@
 				line-height: 1;
 			}
 		}
+
 		.navbar-toggler {
 			right: 0;
 			top: $spacer*2;
 			background-color: white;
 			z-index: 100;
 		}
-
-		.navbar-collapse{
-			.menu-left{
-				ul>li a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					height: 3.25rem;
-					width: 3.25rem;
-				}
-			}
-
-			.menu-center{
-				.nav-item{
-					margin-left: 0;
-					margin-right: 0;
-
-					@include media-breakpoint-up(xl) {
-						margin-left: 1.2rem;
-						margin-right: 1.2rem;
-					}
-				}
-			}
-
-			.menu-right{
-				.nav-item a{
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					height: 3.25rem;
-					width: 3.25rem;
-					background-color: white;
-				}
-				margin-bottom: 1rem;
-				@include media-breakpoint-up(xl) {
-					margin-bottom: 0;
-				}
-			}
-		}
 	}
-
 }
 
+
+.top-search{
+	ul>li a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 5.25rem;
+		width: 4.25rem;
+		font-size: 0.875rem;
+	}
+}
 
 /* ----------------------------------------------------------------
 	Sticky Header
@@ -113,30 +91,30 @@
 	Primary Menu
 -----------------------------------------------------------------*/
 
-// #primary-menu {
-// 	.nav-link {
-// 		color: $primary-menu-font-color;
-// 		font-family: $primary-menu-font;
-// 		font-size: $primary-menu-font-size;
-// 		font-weight: $primary-menu-font-weight;		
-// 		letter-spacing: $primary-menu-font-spacing;
-// 		text-transform: $primary-menu-font-tt;
+#primary-menu {
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $primary-menu-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
 
-// 		@media (min-width: 1200px) {
-// 			line-height: 1;
-// 			padding: $primary-menu-padding 1.875rem;
-// 		}
-// 	}
+		@media (min-width: 1200px) {
+			line-height: 1;
+			padding: $primary-menu-padding 1.875rem;
+		}
+	}
 
-// 	.nav-item {
-// 		&.current,
-// 		&:hover {
-// 			a {
-// 				color: $theme-color;
-// 			}
-// 		}
-// 	}
-// }
+	.nav-item {
+		&.current,
+		&:hover {
+			a {
+				color: $theme-color;
+			}
+		}
+	}
+}
 
 
 /* ----------------------------------------------------------------
@@ -151,33 +129,23 @@
 -----------------------------------------------------------------*/
 
 
-// #top-btns {
-// 	@media (min-width: 1200px) {
-// 		padding-left: 1.375rem;	
-// 	}
+#top-btns {
+	.nav-link {
+		color: $dark;		
+		font-size: 1.125rem;	
+		line-height: 1;
+		height: 5.25rem;
+		width: 4.25rem;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-// 	.nav-item {
-// 		margin-right: 1rem;
-
-// 		@media (min-width: 1200px) {
-// 			margin-right: 0;
-// 		}
-// 	}
-
-// 	.nav-link {
-// 		color: $top-btn-font-color;		
-// 		font-size: $top-btn-font-size;	
-// 		line-height: 1;
-
-// 		@media (min-width: 1200px) {
-// 			padding: 0 0.9375rem;
-// 		}
-
-// 		&:hover {
-// 			color: $primary;
-// 		}
-// 	}
-// }
+		&:hover {
+			color: $primary;
+		}
+	}
+}
 
 
 /* ----------------------------------------------------------------

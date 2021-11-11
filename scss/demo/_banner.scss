@@ -15,91 +15,24 @@
 	Add here styles for banner. Thanks!
 -----------------------------------------------------------------*/
 
-.banner-back {
-	line-height: $initial;
-	object-fit: cover;
-	height: 37rem;
-}
-.banner-back-home {
-	line-height: $initial;
-	object-fit: cover;
-	height: 64.5rem;
-}
+.banner {
+    .banner-wrapper {
+        padding-left: 9.375rem;
+        padding-right: 9.375rem;
 
-
-
-.banner-main-top {
-    position: relative;
-    height: 45rem;
-    background-image: url(../images/banner/back_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    @include media-breakpoint-up(lg) {
-        background-image: url(../images/banner/back-main-top.png);
-    }
-
-    .banner-content {
-        position: absolute;
-        top: 24%;
-        left: calc(50% - 9rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include media-breakpoint-up(lg) {
-            align-items: flex-start;
-            left: calc(29% - 9rem);
-        }
-        .banner-title{
-			line-height: 1.5;
-            font-size: 3.7rem;
-        }
-        .banner-logo{
-            width: 20rem;
-            margin-bottom: 3rem;
-        }
-        .banner-btn{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $font-color-first;
-            width: $spacer*10.5;
-            height: $spacer*4;
-            background-color: $white;
-            border-color: $white;
-            border-radius: $spacer*0.6;
+        @include media-breakpoint-down(lg) {
+            padding-left: 3.75rem;
+            padding-right: 3.75rem;
         }
     }
-}
 
-
-.banner-main-middle {
-    position: relative;
-    height: 25.5rem;
-    background-image: url(../images/banner/back-main-middle.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    @include media-breakpoint-up(lg) {
-        background-image: url(../images/banner/back-main-middle.png);
+    &#about-banner {
+        padding-top: 5.375rem;
+        padding-bottom: 4.375rem;
     }
 
-    .banner-content {
-        position: absolute;
-        top: 16%;
-        left: calc(50% - 9rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .banner-title{
-			line-height: 2;
-            font-size: 3.7rem;
-        }
-        .banner-logo{
-            width: 20rem;
-            margin-bottom: 3rem;
-        }
-   }
+    &#contact-banner {
+        padding-top: 8.375rem;
+        padding-bottom:5.375rem;
+    }
 }

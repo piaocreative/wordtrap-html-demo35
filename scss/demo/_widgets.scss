@@ -17,6 +17,12 @@
 
 
 .widget {
+	.widget-title {
+		font-family: $body-font;
+		font-weight: 600;
+		color: $white;
+		margin-bottom: 1.25rem;
+	}
 
 	// Widget - Payments
 	&.widget-payment {
@@ -34,12 +40,44 @@
 			}
 		}
 	}
-}
 
-.widget-algin-sm{
-	display: flex;
-	justify-content: center;
-	@include media-breakpoint-up(sm) {
-		justify-content: start;
+	&.widget-links {
+		ul {
+			li {
+				margin-bottom: 0.75rem;
+
+				a {
+					font-size: 0.875rem;
+					color: rgba($color: $white, $alpha: 0.5);
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.input-group {
+			input {
+				border: 2px solid #616161;
+			}
+		}
+	}
+
+	&.widget-social {
+		.widget-content {
+			.social-icons {
+				padding: 0;
+				list-style: none;
+	
+				li {
+					line-height: 1;
+					margin-bottom: 0.7rem;
+
+					a {		
+						font-size: 1.25rem;
+						color: $white;
+					}
+				}
+			}
+		}
 	}
 }

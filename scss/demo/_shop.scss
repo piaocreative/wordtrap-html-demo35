@@ -14,296 +14,145 @@
 /* ----------------------------------------------------------------
 	Add here styles for shop pages. Thanks!
 -----------------------------------------------------------------*/
-
-
-/* Category
+/* Product
 -----------------------------------------------------------------*/
-.category {
+.product {
 	position: relative;
 
-	&:hover {
-		.category-image {
-			position: relative;
-
-			&::after {
-				opacity: 50%;
-			}
-		}
-
-		.category-desc {
-			font-size: 2.25rem;
-		}
-
-		.category-reload {
-			opacity: 1;
-		}
-	}
-
-	.category-image {
+	.product-image {
 		position: relative;
 
-		&::after {
-			content: '';
+		img {
+			width: 100%;
+			margin: auto;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
 			position: absolute;
+			z-index: -1;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: black;
-			opacity: 20%;
-			transition: all 0.3s ease-in-out;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
 		}
 	}
 
-	.category-desc {
-		color: white;
-		font-size: $h3-font-size;
-		font-weight: 700;
-		margin-bottom: 0;
-		position: absolute;
-		top: 20%;
-		width: 100%;			
-		@include transition(all 0.3s ease-in-out);
-		@include translateY(-50%);
+	.product-details {
+		padding: 1.25rem 0;
+		z-index: 1;
 	}
 
-	.category-reload {
-		position: absolute;
-		top: 50%;
-		left: 50%;		
-		background-color: transparent;
-		text-align: center;		
-		opacity: 1;
-		@include transition(all 0.3s ease-in-out);
-		@include translate3d(-50%, -50%, 0);
+	.product-price {
+		font-family: $heading-font;
+		font-size: 1.25rem;
+		color: $heading-color;
 
-		@media (min-width: 992px) {
-			opacity: 0;
+		del {
+			font-weight: 300;
+			font-size: 0.875rem;
+			color: #7f7f7f;
+		}
+	}
+
+	.product-title {
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	.product-desc {
+		font-size: 0.75rem;
+		line-height: 1.5;
+		color: #7f7f7f;
+	}
+
+	.product-rating {
+		line-height: 1;
+		color: $secondary;
+		font-size: 0.5rem;
+
+		i {
+			color: #535353;
+			font-size: 0.75rem;
+
+			&.empty {
+				color: rgba(#535353, 0.5);
+			}
+		}
+	}
+
+	.product-info {
+		font-size: 1.125rem;
+		color: #4a4948;
+	}
+
+	&:hover {
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.add-to-cart, .add-to-wishlist {
+		font-size: 1.25rem;
+		color: #423a36;
+
+		@include transition(all 0.3s ease-in-out);	
+
+		&:hover {
+			color: $theme-color;
 		}
 	}
 }
 
-
-/* Product
------------------------------------------------------------------*/
-
-
-.product {
-	position: relative;
-
-	.product-img{
-		
-	}
-
-	.product-title{
-
-	}
-	.product-detail{
-		
-	}
-	.product-price{
-
-	}
-	.product-new{
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 27px;
-		height: 27px;
-		background-color: black;
-		color: white;
-		font-family: $heading-font;
-		font-size: 0.56rem;
-		border-radius: 50%;
-		line-height: 1;
-	}
-
-	padding-top: 1rem;
-
-	.product-image{
-		position: relative;
-		display: flex;
-		justify-content: center;
-	}
-	.product-top{
-		// background-color: lightcoral;
-		position: absolute;
-		top: 2.4rem;
-		left: 1rem;
-		line-height: 1;
-		font-size: 1.15rem;
-		z-index: 3;
-	}
-	.product-top-mark{
-		position: absolute;
-		right: 1.4rem;
-		top: 1.4rem;
-		width: 1.3rem !important;
-		z-index: 3;
-	}
-	.product-middle{
-		// background-color: lightseagreen;
-		position: absolute;
-		bottom: 5rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-
-		.product-name{
-			margin-bottom: 0.5rem;
-			line-height: initial;
-		}
-		.product-company{
-			color: #6d6d6d;
-			margin-bottom: 0;
-			line-height: initial;
-		}
-	}
-	.product-middle-price{
-		position: absolute;
-		top: 38%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		z-index: 3;
-
-		.product-name{
-			font-size: 1.4rem;
-		}
-		.product-company{
-			font-size: 5rem;
-			list-style: 1;
-		}
-	}
-	.product-bottom{
-		// background-color: mediumslateblue;
-		position: absolute;
-		bottom: 0;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		height: 4.2rem;
-		padding: 0.4rem;
-
-		.product-price{
-			margin-left: 1.25rem;
-			line-height: initial;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			.product-price-mark{
-				width: 3.4rem;
-				height: 2.25rem;
-				z-index: 1;
-				margin-left: -3rem;
-				margin-right: 0.5rem;
-			}
-			p {
-				margin-bottom: 0;
-				z-index: 2;
-			}
-		}
-		.product-btn{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			max-width: 5.625rem;
-			width: 40%;
-			height: 100%;
-			font-size: 0.94rem;
-		}
-	}
-
+.onnew, .onsale {
+	font-family: $heading-font;
+	font-size: 0.75rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	background-color: $theme-color;
+	text-transform: uppercase;
+	top: 0.5rem;
+	right: 0.5rem;
+	color: $white;
 }
 
 .ads {
 	position: relative;
-	display: block;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	.ads-content {
-		position: absolute;
+	.ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-		&.ads-large {
-			right: 5rem;
-			top: 3.5rem;
-			text-align: right;
-			max-width: 9rem;
-		}
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-		&.ads-small {
-			top: 50%;
-			left: 0;
-			@include translateY(-50%);
-
-			h4 {
-				font-size: 1.125rem;
-				line-height: 1.25;
-			}
-		}
-
-		&.ads-normal {
-			right: 5rem;
-			top: 0;
-			text-align: right;
-			height: 100%;
-
-			.ads-top {
-				padding-top: 100%;
-			}
-		}
-	}
-
-	.ads-content-top {
-		position: absolute;
-		right: 5rem;
-		top: 20%;
-		text-align: right;
-		@include translateY(-50%);
-	}
-
-	.ads-content-bottom {
-		position: absolute;
-		right: 5rem;
-		top: 72%;
-		text-align: right;
-		@include translateY(-50%);
-		max-width: 10.3125rem;
-
-		h4 {
-			font-size: 1.5rem;
-			font-family: $body-font;
-			color: white;
-			line-height: 1.5;
-		}
-	}
+	.ads-body {
+        position: relative;
+        z-index: 1;
+		padding: 5rem 3rem;
+    }
 }
-
-[data-cart-items] {
-    position: relative;
-    display: inline-block;
-
-	&::before {
-		content: attr(data-cart-items);
-		position: absolute;
-		top: -.5rem;
-		right: -.75rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 1rem;
-		height: 1rem;
-		font-size: 0.625rem;
-		font-weight: 500;
-		border-radius: 50%;
-		background-color: $theme-color;
-		color: $white;
-	}
-}
-

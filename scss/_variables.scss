@@ -12,15 +12,15 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   #000;
-$body-color:                    #7d7b78;
-$heading-color:                 #aaaaaa;
-$third-color:                   #2e2e2e;
-$light:                         #f3eee8;
+$theme-color:                 #000;
+$body-color:                  #000000;
+$heading-color:               #000000;
+$third-color:                 #2e2e2e;
+$light:                       #f3eee8;
 
-$theme-color-first:             #232323;
-$theme-color-second:            #000;
-$theme-color-third:             #aaaaaa;
+$theme-color-first:           #232323;
+$theme-color-second:          #000;
+$theme-color-third:           #aaaaaa;
 
 
 //-------------------- Font Families --------------------//
@@ -35,44 +35,44 @@ $heading-font:                  'Poppins', 'Sans Serif';
 $primary:                       $theme-color;
 $secondary:                     $heading-color;
 
-// Spacer
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.25,
-  5: $spacer * 2,
-) !default;
+$primary-menu-padding:			0.5rem;
+$sticky-menu-padding:			1.40625rem;
+
+$primary-menu-font:             $body-font;
+$primary-menu-font-weight:      400;
+$primary-menu-font-size:        0.875rem;
+$primary-menu-font-tt:          initial;
+$primary-menu-font-color:     #fff;
+$primary-menu-font-spacing:     0;
+
 
 // Link
 $link-color:                    $heading-color;
-$link-decoration:				        none;
-$link-hover-color:				      $theme-color;
+$link-decoration:				none;
+$link-hover-color:				$theme-color;
 
 // Border
-$border-radius:					        0;
+$border-radius:					0;
 
 // Font sizes
 $font-size-base:                1rem;
 
-$h1-font-size:                	3.75rem;
-$h2-font-size:                	2.8rem;
-$h3-font-size:                	1.5rem;
-$h4-font-size:                	1.0625rem;
-$h5-font-size:                	$font-size-base*0.875;
-$h6-font-size:               	  0.75rem;
+$h1-font-size:                	5.625rem;
+$h2-font-size:                	3.75rem;
+$h3-font-size:                	2.5rem;
+$h4-font-size:                	1.5625em;
+$h5-font-size:                	1.125rem;
+$h6-font-size:               	0.875rem;
 
 // Line Height
-$line-height-base:            	30 / 14;
+$line-height-base:            	1.5;
 $line-height-sm:              	30 / 16;
 $line-height-lg:              	30 / 12;
 
 // Buttons
-$btn-padding-y:              	  0.6rem;
-$btn-padding-x:              	  1rem;
-$btn-font-size:              	  0.75rem;
+$btn-padding-y:              	0.875rem;
+$btn-padding-x:              	2rem;
+$btn-font-size:              	0.75rem;
 
 $btn-padding-y-lg:              1.5rem;
 $btn-padding-x-lg:              2.5rem;
@@ -85,73 +85,45 @@ $navbar-brand-margin-end:       3.9rem;
 
 // Forms
 $input-bg:                      transparent;
-$input-border-color:            #616161;
-$input-border-width:			      0;
+$input-border-color:          #616161;
+$input-border-width:			0;
 $input-btn-focus-color-opacity: 1;
 
 $input-btn-padding-y:           1rem;
 $input-btn-padding-x:           1rem;
 $input-btn-font-size:           0.875rem;
 
-$input-btn-padding-y-lg:        0.9rem;
-$input-btn-padding-x-lg:        2.5rem;
-$input-btn-font-size-lg:        0.875rem;
+$input-btn-padding-y-lg:        2rem;
+$input-btn-padding-x-lg:        0rem;
+$input-btn-font-size-lg:        1rem;
 
 $input-btn-line-height:         1.4;
 
 $input-btn-focus-width:         1px;
 $input-focus-border-color:      white;
 
-// $input-color:                   $theme-color-third;
+$input-border-radius-lg:		0;
 
 $input-border-radius:           0;
 $input-font-weight:             300;
-$input-font-size:               0.685rem;
 
 
 //-------------------- Top Bar --------------------//
 
 $topbar-height:                 2.8125rem;
 $topbar-line-height:            2.75rem;
-$topbar-color:                  #adacac;
-$topbar-hover-color:            #7c7b7a;
+$topbar-color:                #adacac;
+$topbar-hover-color:          #7c7b7a;
 
 
 //-------------------- Header --------------------//
-
+$header-height:					5.5rem;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:						    7.5rem;
-$section-spacer-60px:						3.75rem;
-$section-spacer-75px:						4.6875rem;
-$section-spacer-90px:						5.625rem;
-$section-spacer-120px:					7.5rem;
+$section-spacer:				7.5rem;
 
-
-// ##################################################
-
-//-------------------- Basic Values ------------------//
-$initial:                       initial;
-$white:                         white;
-$black:                         black;
-
-//-------------------- Font Color --------------------//
-$font-color-body:               #282828;
-
-$font-color-first:              #4f4f4f;
-$font-color-second:             #848484;
-$font-color-third:              #aaaaaa;
-// $font-color-fourth:             #86bf3e;
-// $font-color-fivth:              #fc4b4e;
-// $font-color-sixth:              #79cbe4;
-// $font-color-seventh:            #7d7c7b;
-
-//-------------------- Background Color -------------//
-$bg-color-first:                $theme-color-first;
-$bg-color-second:               $theme-color-second;
-$bg-color-third:                $theme-color-third;
 
 //-------------------- Social Icons Colors --------------------//
 
